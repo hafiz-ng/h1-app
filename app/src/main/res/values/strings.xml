@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">H1-App</string>
+    <string name="splash_sub_title">The <b><font color='#E10E71'>unofficial</font></b> Android client for HackerOne API</string>
+    <string name="bug_type_description">Browse reports from common bug types</string>
+    <string name="hacker_101_description">Need to learn the basics of hacking? HackerOne offers Hacker101 - a free online course about web security.</string>
+    <string name="about_description">H1-App is an open source HackerOne API client for Android. This is an unofficial release supported and developed by hafiz.ng</string>
+    <string name="about_developer">Hafiz Abdulaziz is a bug bounty hunter, penetration tester and Open-source contributor focusing mostly on Mobile Application Security.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reputation_earned">Ranking is calculated based on reputation earned.</string>
+    <string name="hacker_activity_text">Latest hacker activity on HackerOne</string>
+</resources>

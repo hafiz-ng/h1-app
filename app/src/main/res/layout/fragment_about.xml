@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AboutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appbar"
+            android:fontFamily="@font/effra_regular"
+            android:padding="16dp"
+            android:paddingRight="16dp"
+
+            android:text="About Project"
+            android:textColor="#3E3E3E"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/effra_regular"
+            android:lineSpacingExtra="2sp"
+            android:paddingLeft="16dp"
+            android:text="@string/about_description"
+            android:textColor="#3E3E3E"
+            android:textSize="16sp" />
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="60dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@color/light_grey" />
+
+
+        <TextView
+            android:id="@+id/textViewDeveloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTitle"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/effra_regular"
+            android:paddingLeft="16dp"
+            android:text="About Developer"
+            android:textColor="#9A9A9A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/effra_regular"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/about_developer"
+            android:textColor="#3E3E3E"
+            android:textSize="16sp" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:src="@drawable/hafiz" />
+
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/effra_regular"
+            android:text="Hafiz Abdulaziz"
+            android:textColor="#3e3e3e"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textViewSite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/effra_regular"
+            android:text="https://hafiz.ng"
+            android:textColor="#2D68F4"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/buttonHacker101"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/teal_200"
+            android:fontFamily="@font/effra_regular"
+            android:text="Buy me coffee!"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/textViewCopyrights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/effra_regular"
+            android:text="© hafiz.ng"
+            android:textColor="#9a9a9a"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,133 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+    android:layout_marginBottom="18dp"
+    android:background="@drawable/card">
+
+        <ImageView
+            android:id="@+id/imageViewProgram"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/shopify_glyph"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/effra_regular"
+            android:text="Staff member with no permission can delete POS staff from account settings"
+            android:textColor="@color/blue_400"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textViewBy"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProgram"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/effra_regular"
+            android:text="By "
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProgram"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+        <TextView
+            android:id="@+id/textViewReporterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/effra_regular"
+            android:text="abhriramsita "
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textViewBy"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+
+        <TextView
+            android:id="@+id/textViewTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/effra_regular"
+            android:text="to "
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textViewReporterName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+        <TextView
+            android:id="@+id/textViewProgramName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/effra_regular"
+            android:text="Reddit"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/textViewTo"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+
+        <TextView
+            android:id="@+id/textViewDisclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/effra_regular"
+            android:text="disclosed "
+            android:textColor="@color/light_grey2"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProgram"
+            app:layout_constraintTop_toBottomOf="@+id/textViewReporterName" />
+
+        <TextView
+            android:id="@+id/textViewDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/effra_regular"
+            android:text="3 days "
+            android:textColor="@color/light_grey2"
+            app:layout_constraintStart_toEndOf="@+id/textViewDisclose"
+            app:layout_constraintTop_toBottomOf="@+id/textViewReporterName" />
+
+        <TextView
+            android:id="@+id/textViewAgo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/effra_regular"
+            android:text="ago"
+            android:textColor="@color/light_grey2"
+            app:layout_constraintStart_toEndOf="@+id/textViewDay"
+            app:layout_constraintTop_toBottomOf="@+id/textViewReporterName" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/round_orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/logout"
+        android:title="Log Out"
+        app:showAsAction="never"/>
+
+
+    <item android:id="@+id/hacker101"
+        android:title="Hacker 101"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/about"
+        android:title="About Project"
+        app:showAsAction="never"/>
+
+<!--    <item android:id="@+id/notify"-->
+<!--        android:title="About Project"-->
+<!--        android:icon="@drawable/toolbar_notification"-->
+<!--        app:showAsAction="always"/>-->
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Hacker101Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/effra_regular"
+            android:padding="16dp"
+            android:text="Hacker 101"
+            android:textColor="#3E3E3E"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/effra_regular"
+            android:paddingLeft="16dp"
+            android:text="@string/hacker_101_description"
+            android:textColor="#3E3E3E"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonHacker101"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/teal_200"
+            android:fontFamily="@font/effra_regular"
+            android:text="Start Hacking!"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</FrameLayout>

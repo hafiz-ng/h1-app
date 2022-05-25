@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/nav_disclosed_reports">
+
+    <fragment
+        android:id="@+id/nav_disclosed_reports"
+        android:name="app.h1.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/about"
+        android:name="app.h1.fragments.AboutFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/hacker101"
+        android:name="app.h1.fragments.Hacker101Fragment"
+        android:label="Hacker 101"
+        tools:layout="@layout/fragment_hacker101" />
+    <fragment
+        android:id="@+id/nav_bug_reports"
+        android:name="app.h1.fragments.ReportsFragment"
+        android:label="fragment_reports"
+        tools:layout="@layout/fragment_reports" />
+    <fragment
+        android:id="@+id/nav_leaderboard"
+        android:name="app.h1.fragments.LeaderboardFragment"
+        android:label="fragment_leaderboard"
+        tools:layout="@layout/fragment_leaderboard" />
+</navigation>
