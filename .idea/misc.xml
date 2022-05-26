@@ -5,6 +5,7 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/accent_card.xml" value="0.2135" />
         <entry key="app/src/main/res/drawable-v24/card_bug_type.xml" value="0.121" />
+        <entry key="app/src/main/res/drawable/bottom_sheet_background.xml" value="0.1915" />
         <entry key="app/src/main/res/drawable/card.xml" value="0.2135" />
         <entry key="app/src/main/res/drawable/round_orange.xml" value="0.121" />
         <entry key="app/src/main/res/drawable/round_red.xml" value="0.121" />
@@ -15,15 +16,17 @@
         <entry key="app/src/main/res/layout/activity_hacker101.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_report.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_report_detail.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/layout/activity_ssrf.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/bottom_sheet.xml" value="0.375" />
         <entry key="app/src/main/res/layout/fragment_about.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_hacker101.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.328149300155521" />
-        <entry key="app/src/main/res/layout/fragment_leaderboard.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_leaderboard.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_reports.xml" value="0.375" />
         <entry key="app/src/main/res/layout/navigation_header.xml" value="0.375" />
-        <entry key="app/src/main/res/layout/row.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/row.xml" value="0.5" />
         <entry key="app/src/main/res/layout/row_hacker.xml" value="0.45" />
         <entry key="app/src/main/res/layout/row_hacker2.xml" value="0.5" />
         <entry key="app/src/main/res/layout/row_sample.xml" value="0.335" />

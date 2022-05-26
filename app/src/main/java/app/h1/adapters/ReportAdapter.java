@@ -1,9 +1,16 @@
 package app.h1.adapters;
 
+import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,6 +25,7 @@ import java.util.List;
 
 import app.h1.R;
 import app.h1.models.Report;
+import app.h1.ui.ReportDetail;
 
 public class ReportAdapter extends RecyclerView.Adapter<ReportAdapter.ReportHolder> {
 
@@ -48,7 +56,32 @@ public class ReportAdapter extends RecyclerView.Adapter<ReportAdapter.ReportHold
         holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "Item clicked!", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(context, "Item clicked!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context , ReportDetail.class);
+
+                Bundle bundle = new Bundle();
+                bundle.putString("title", report.getTitle());
+                bundle.putString("reported_by", report.getReported_by());
+                bundle.putString("program", report.getProgram());
+                bundle.putString("disclose_date", report.getDisclose_date());
+
+                intent.putExtras(bundle);
+
+                context.startActivity(intent);
+            }
+        });
+
+        holder.report_options.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Dialog finish_dialog = new Dialog(v.getContext());
+                finish_dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+                finish_dialog.setContentView(R.layout.bottom_sheet);
+                finish_dialog.show();
+                finish_dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+                finish_dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                finish_dialog.getWindow().setGravity(Gravity.BOTTOM);
             }
         });
     }
@@ -59,8 +92,7 @@ public class ReportAdapter extends RecyclerView.Adapter<ReportAdapter.ReportHold
     }
 
     public static class ReportHolder extends RecyclerView.ViewHolder {
-
-        ImageView imageView;
+        ImageView imageView, report_options;
         TextView title, reported_by, program, disclose_date;
         ConstraintLayout constraintLayout;
 
@@ -72,6 +104,7 @@ public class ReportAdapter extends RecyclerView.Adapter<ReportAdapter.ReportHold
             reported_by = itemView.findViewById(R.id.textViewReporterName);
             program = itemView.findViewById(R.id.textViewProgramName);
             disclose_date = itemView.findViewById(R.id.textViewDay);
+            report_options = itemView.findViewById(R.id.imageViewReportOptions);
             constraintLayout = itemView.findViewById(R.id.main_layout);
 
         }

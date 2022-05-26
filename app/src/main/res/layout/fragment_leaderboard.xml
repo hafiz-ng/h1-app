@@ -63,11 +63,11 @@
 
 
         <include
+            android:id="@+id/row"
+            layout="@layout/row_hacker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/row"
-            android:layout_below="@+id/textViewReputation"
-            layout="@layout/row_hacker" />
+            android:layout_below="@+id/textViewReputation" />
 
 
         <include

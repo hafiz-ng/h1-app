@@ -72,15 +72,15 @@ public class HomeFragment extends Fragment {
                             try {
                                 JSONObject jsonObject = response.getJSONObject(i);
 
+                                String id = jsonObject.getString("id");
                                 String title = jsonObject.getString("title");
                                 String reported_by = jsonObject.getString("reported_by");
                                 String program = jsonObject.getString("program");
                                 String disclose_date = jsonObject.getString("disclose_date");
                                 String img = jsonObject.getString("program_img");
+                                Report report = new Report(id, title, reported_by, program, disclose_date, img);
 
-//                                Toast.makeText(getActivity(), disclose_date, Toast.LENGTH_SHORT).show();
-
-                                Report report = new Report(title, reported_by, program, disclose_date, img);
+                                Toast.makeText(getActivity(), "Report IDs: " + id, Toast.LENGTH_SHORT).show();
                                 reportList.add(report);
                             } catch (JSONException e) {
                                 e.printStackTrace();
