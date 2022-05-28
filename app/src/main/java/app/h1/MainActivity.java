@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         navigationView.setItemIconTintList(null);
 
         NavController navController = Navigation.findNavController(this, R.id.container);
+//        NavigationUI.setupActionBarWithNavController(this, navController);
         NavigationUI.setupWithNavController(navigationView, navController);
         toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle("");
@@ -72,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
         }
         else if (item.getItemId() == R.id.about) {
+//            Navigation.findNavController(this, R.id.container).navigate(R.id.about);
+//
             Intent i = new Intent(MainActivity.this, AboutActivity.class);
             startActivity(i);
         }

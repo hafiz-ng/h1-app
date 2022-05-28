@@ -13,7 +13,6 @@ import app.h1.R;
 
 public class Hacker101Fragment extends Fragment {
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

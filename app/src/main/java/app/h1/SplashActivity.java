@@ -3,13 +3,10 @@ package app.h1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import app.h1.ui.CommonBugsActivity;
 
 public class SplashActivity extends AppCompatActivity {
 

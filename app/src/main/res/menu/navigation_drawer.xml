@@ -7,23 +7,21 @@
         android:title="Disclosed Reports"
         android:icon="@drawable/file"/>
 
-
-
     <item
         android:id="@+id/nav_leaderboard"
         android:title="Leaderboard"
         android:icon="@drawable/leaderboard"/>
-
-<!--    <item-->
-<!--        android:id="@+id/nav_saved_reports"-->
-<!--        android:title="Saved Reports"-->
-<!--        android:icon="@drawable/saved"/>-->
 
     <item
         android:id="@+id/nav_bug_reports"
         android:icon="@drawable/bug"
         android:title="Bug Reports" />
 
+
+    <item
+        android:id="@+id/nav_programs"
+        android:icon="@drawable/folder"
+        android:title="Programs" />
 
     <item
         android:title="Others">

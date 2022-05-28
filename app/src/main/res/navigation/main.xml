@@ -14,7 +14,11 @@
         android:id="@+id/about"
         android:name="app.h1.fragments.AboutFragment"
         android:label="About"
-        tools:layout="@layout/fragment_about" />
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_about_to_hacker1014"
+            app:destination="@id/hacker101" />
+    </fragment>
     <fragment
         android:id="@+id/hacker101"
         android:name="app.h1.fragments.Hacker101Fragment"
@@ -22,12 +26,31 @@
         tools:layout="@layout/fragment_hacker101" />
     <fragment
         android:id="@+id/nav_bug_reports"
-        android:name="app.h1.fragments.ReportsFragment"
-        android:label="fragment_reports"
-        tools:layout="@layout/fragment_reports" />
+        android:name="app.h1.fragments.BugsFragment"
+        android:label="fragment_bugs"
+        tools:layout="@layout/fragment_bugs" >
+        <action
+            android:id="@+id/action_nav_bug_reports_to_reportDetailFragment"
+            app:destination="@id/reportDetailFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_leaderboard"
         android:name="app.h1.fragments.LeaderboardFragment"
         android:label="fragment_leaderboard"
         tools:layout="@layout/fragment_leaderboard" />
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="app.h1.fragments.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/nav_programs"
+        android:name="app.h1.fragments.ProgramFragment"
+        android:label="fragment_program"
+        tools:layout="@layout/fragment_program" />
+    <fragment
+        android:id="@+id/reportDetailFragment"
+        android:name="app.h1.fragments.ReportDetailFragment"
+        android:label="fragment_report_detail"
+        tools:layout="@layout/fragment_report_detail" />
 </navigation>

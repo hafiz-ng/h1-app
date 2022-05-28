@@ -1,8 +1,10 @@
-package app.h1;
+package app.h1.user;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import app.h1.R;
 
 public class UserActivity extends AppCompatActivity {
 

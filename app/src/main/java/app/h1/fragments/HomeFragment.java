@@ -80,7 +80,7 @@ public class HomeFragment extends Fragment {
                                 String img = jsonObject.getString("program_img");
                                 Report report = new Report(id, title, reported_by, program, disclose_date, img);
 
-                                Toast.makeText(getActivity(), "Report IDs: " + id, Toast.LENGTH_SHORT).show();
+//                                Toast.makeText(getActivity(), "Report IDs: " + id, Toast.LENGTH_SHORT).show();
                                 reportList.add(report);
                             } catch (JSONException e) {
                                 e.printStackTrace();

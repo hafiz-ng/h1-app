@@ -25,7 +25,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:minHeight="?attr/actionBarSize">
 
-            <RelativeLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -33,18 +33,36 @@
                     android:id="@+id/hamburger"
                     android:layout_width="20dp"
                     android:layout_height="25dp"
-                    android:layout_centerVertical="true"
                     android:layout_marginLeft="8dp"
-                    android:src="@drawable/menu" />
+                    android:src="@drawable/menu"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
                 <ImageView
-                    android:layout_width="200dp"
+                    android:id="@+id/imageViewLogo"
+                    android:layout_width="150dp"
                     android:layout_height="35dp"
-                    android:layout_centerInParent="true"
                     android:src="@drawable/logo_main"
-                    android:textColor="@color/white" />
-            </RelativeLayout>
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/notification_icon"
+                    app:layout_constraintHorizontal_bias="0.703"
+                    app:layout_constraintStart_toEndOf="@+id/hamburger"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <include
+                    android:id="@+id/notification_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    layout="@layout/bell"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.appcompat.widget.Toolbar>
 

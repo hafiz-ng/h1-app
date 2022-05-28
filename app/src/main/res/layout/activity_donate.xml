@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/default_light_grey_bg"
     android:layout_height="match_parent"
     tools:context=".ui.DonateActivity">
 
@@ -64,20 +65,90 @@
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/effra_regular"
         android:paddingLeft="16dp"
-        android:text="@string/hacker_101_description"
+        android:text="I create tools related to bug bounty and penetration testing. Buy me coffee to keep me motivated."
         android:textColor="#3E3E3E"
         android:textSize="16sp" />
 
     <RelativeLayout
+        android:id="@+id/linearLayoutRate"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/textViewDescription"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/accent_tint"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageViewCup"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/coffee" />
+
+        <ImageView
+            android:id="@+id/imageViewMultiplication"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/imageViewCup"
+            android:src="@drawable/multiplication" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/imageViewMultiplication"
+            android:src="@drawable/one_circle" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:src="@drawable/three_circle" />
+
+        <ImageView
+            android:id="@+id/textView2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:src="@drawable/five_circle" />
+
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="12dp"
+            android:textSize="12sp"
+            android:inputType="number"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:background="@drawable/card_gray_border"
+            android:fontFamily="@font/effra_regular" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/textViewTitle"
+        android:layout_height="350dp"
+        android:layout_below="@+id/linearLayoutRate"
         android:layout_marginStart="16dp"
         android:layout_marginTop="90dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@color/white"
+        android:background="@drawable/card"
         android:orientation="vertical"
         android:padding="20dp">
 

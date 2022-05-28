@@ -6,7 +6,6 @@
         android:title="Log Out"
         app:showAsAction="never"/>
 
-
     <item android:id="@+id/hacker101"
         android:title="Hacker 101"
         app:showAsAction="never"/>

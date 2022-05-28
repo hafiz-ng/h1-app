@@ -64,7 +64,7 @@ public class ReportAdapter extends RecyclerView.Adapter<ReportAdapter.ReportHold
                 bundle.putString("reported_by", report.getReported_by());
                 bundle.putString("program", report.getProgram());
                 bundle.putString("disclose_date", report.getDisclose_date());
-
+                bundle.putString("id", report.getId());
                 intent.putExtras(bundle);
 
                 context.startActivity(intent);
