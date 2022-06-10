@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/navigation_header_container"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="20dp">
 
@@ -19,21 +20,21 @@
         android:id="@+id/textViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/effra_regular"
-        android:text="Hafiz Aziz"
         android:layout_marginLeft="20dp"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageViewHeader"
+        android:fontFamily="@font/effra_regular"
+        android:text="Hello, Hafiz Aziz"
+        android:textColor="#9a9a9a"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@+id/imageViewHeader"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:layout_width="1dp"
-        android:layout_height="1dp"
-        android:background="@color/light_grey"
-        app:layout_constraintTop_toBottomOf="@+id/textViewName"
-        app:layout_constraintStart_toStartOf="parent"/>
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@color/light_grey"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/imageViewHeader"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"/>-->
 
     <ImageView
         android:id="@+id/imageViewUser"

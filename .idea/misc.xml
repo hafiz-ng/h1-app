@@ -6,20 +6,26 @@
         <entry key="app/src/main/res/drawable-v24/accent_card.xml" value="0.2135" />
         <entry key="app/src/main/res/drawable-v24/accent_tint.xml" value="0.1205" />
         <entry key="app/src/main/res/drawable-v24/card_bug_type.xml" value="0.121" />
+        <entry key="app/src/main/res/drawable-xxhdpi/card_alert_dialog.xml" value="0.192" />
         <entry key="app/src/main/res/drawable-xxhdpi/card_gray_border.xml" value="0.1205" />
+        <entry key="app/src/main/res/drawable-xxhdpi/card_user.xml" value="0.192" />
         <entry key="app/src/main/res/drawable-xxhdpi/round_white_red.xml" value="0.1205" />
+        <entry key="app/src/main/res/drawable/accent_tint_white.xml" value="0.1825" />
         <entry key="app/src/main/res/drawable/bottom_sheet_background.xml" value="0.1915" />
         <entry key="app/src/main/res/drawable/card.xml" value="0.2135" />
+        <entry key="app/src/main/res/drawable/h1_icon.xml" value="0.174" />
         <entry key="app/src/main/res/drawable/round_orange.xml" value="0.121" />
         <entry key="app/src/main/res/drawable/round_red.xml" value="0.121" />
         <entry key="app/src/main/res/layout/activity_about.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_bug_type.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_common_bugs.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/activity_donate.xml" value="0.45652173913043476" />
+        <entry key="app/src/main/res/layout/activity_donate.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_hacker101.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_load_report.xml" value="0.21717171717171718" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main_delete.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_notification.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_reading_list.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_report.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_report_detail.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.24166666666666667" />
@@ -27,7 +33,9 @@
         <entry key="app/src/main/res/layout/activity_user.xml" value="0.335" />
         <entry key="app/src/main/res/layout/bell.xml" value="1.5" />
         <entry key="app/src/main/res/layout/bottom_sheet.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/buymecoffee.xml" value="0.335" />
         <entry key="app/src/main/res/layout/content_user.xml" value="0.15520833333333334" />
+        <entry key="app/src/main/res/layout/delete_user_alert.xml" value="0.165" />
         <entry key="app/src/main/res/layout/fragment_about.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_bugs.xml" value="0.375" />
         <entry key="app/src/main/res/layout/fragment_hacker101.xml" value="0.25" />
@@ -41,6 +49,7 @@
         <entry key="app/src/main/res/layout/row.xml" value="0.5" />
         <entry key="app/src/main/res/layout/row_hacker.xml" value="0.45" />
         <entry key="app/src/main/res/layout/row_hacker2.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/row_notifications.xml" value="0.375" />
         <entry key="app/src/main/res/layout/row_program.xml" value="0.45" />
         <entry key="app/src/main/res/layout/row_program2.xml" value="0.335" />
         <entry key="app/src/main/res/layout/row_sample.xml" value="0.335" />

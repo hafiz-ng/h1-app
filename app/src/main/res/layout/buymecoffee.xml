@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/default_light_grey_bg"
+    android:layout_height="match_parent"
+    tools:context=".ui.BuyMeCoffee">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:elevation="0dp"
+        android:minHeight="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/back" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/logo_main"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/effra_regular"
+            android:padding="16dp"
+            android:text="Buy me coffee!"
+            android:textColor="#3E3E3E"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/effra_regular"
+            android:paddingLeft="16dp"
+            android:text="I create tools related to bug bounty and penetration testing. Buy me coffee to keep me motivated."
+            android:textColor="#3E3E3E"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Github/hafiz-ng"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@font/effra_regular"
+            android:layout_margin="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/linearLayoutRate"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/accent_tint"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageViewCup"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/coffee" />
+
+            <ImageView
+                android:id="@+id/imageViewMultiplication"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/imageViewCup"
+                android:src="@drawable/multiplication" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/imageViewMultiplication"
+                android:src="@drawable/one_circle" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/imageView1"
+                android:src="@drawable/three_circle" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/imageView2"
+                android:src="@drawable/five_circle" />
+
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/editTextUserInput"-->
+            <!--                    android:layout_width="40dp"-->
+            <!--                    android:layout_height="40dp"-->
+            <!--                    android:layout_centerVertical="true"-->
+            <!--                    android:layout_toRightOf="@+id/imageView3"-->
+            <!--                    android:background="@drawable/card_gray_border"-->
+            <!--                    android:fontFamily="@font/effra_regular"-->
+            <!--                    android:inputType="number"-->
+            <!--                    android:padding="12dp"-->
+            <!--                    android:textSize="12sp" />-->
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editTextUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/card_gray_border"
+            android:fontFamily="@font/effra_regular"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:hint="Your email (optional)"
+            android:textColor="#9a9a9a"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@+id/linearLayoutRate"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/editTextCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/accent_tint_white"
+                android:ems="10"
+                android:fontFamily="@font/effra_regular"
+                android:hint="Card Number"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextCardNumber"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/editTextExpiryMonth"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/accent_tint_white"
+                    android:ems="10"
+                    android:fontFamily="@font/effra_regular"
+                    android:hint="MM"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="/"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editTextExpiryYear"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/accent_tint_white"
+                    android:ems="10"
+                    android:fontFamily="@font/effra_regular"
+                    android:hint="YY"
+                    android:inputType="date"
+                    android:padding="10dp"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editTextCVV"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/accent_tint_white"
+                    android:ems="10"
+                    android:fontFamily="@font/effra_regular"
+                    android:hint="CVV"
+                    android:inputType="date"
+                    android:padding="10dp"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/startTransaction"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/teal_200"
+                android:fontFamily="@font/effra_regular"
+                android:onClick="initializePaystack"
+                android:text="Send N1,000"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/paystack" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

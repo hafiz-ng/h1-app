@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,7 +14,7 @@ import android.widget.ImageView;
 
 import app.h1.MainActivity;
 import app.h1.R;
-import app.h1.SplashActivity;
+import app.h1.SignUpUser;
 
 public class AboutActivity extends AppCompatActivity {
 
@@ -36,7 +35,7 @@ public class AboutActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(AboutActivity.this, DonateActivity.class);
+                Intent i = new Intent(AboutActivity.this, BuyMeCoffee.class);
                 startActivity(i);
             }
         });
@@ -60,7 +59,7 @@ public class AboutActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         if(item.getItemId() == R.id.logout) {
-            Intent i = new Intent(AboutActivity.this, SplashActivity.class);
+            Intent i = new Intent(AboutActivity.this, SignUpUser.class);
             startActivity(i);
         }
         return super.onOptionsItemSelected(item);

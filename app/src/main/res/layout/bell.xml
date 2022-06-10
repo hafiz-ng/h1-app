@@ -13,7 +13,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/notification_toolbar" />
     
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardViewNotification"
         android:layout_width="13dp"
         android:layout_height="13dp"
@@ -41,6 +41,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

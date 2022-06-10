@@ -1,5 +1,6 @@
 package app.h1.adapters;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
@@ -82,8 +83,37 @@ public class ReportAdapter extends RecyclerView.Adapter<ReportAdapter.ReportHold
                 finish_dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
                 finish_dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 finish_dialog.getWindow().setGravity(Gravity.BOTTOM);
+
+                TextView save_report = finish_dialog.findViewById(R.id.bottom_sheet_option);
+                TextView share_report = finish_dialog.findViewById(R.id.bottom_sheet_option2);
+
+                save_report.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(v.getContext(), "Report saved!", Toast.LENGTH_SHORT).show();
+
+//                        Bundle bundle = ((Activity) context).getIntent().getExtras();
+//
+//                        String mTitle = bundle.getString("title");
+//                        String mReportedBy = bundle.getString("reported_by");
+//                        String mProgram = bundle.getString("program");
+//                        String mDiscloseDate = bundle.getString("disclose_date");
+//                        String mId = bundle.getString("id");
+
+                    }
+                });
+
+                share_report.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(v.getContext(), "Share this report", Toast.LENGTH_SHORT).show();
+
+                    }
+                });
+
             }
         });
+
     }
 
     @Override
@@ -106,7 +136,6 @@ public class ReportAdapter extends RecyclerView.Adapter<ReportAdapter.ReportHold
             disclose_date = itemView.findViewById(R.id.textViewDay);
             report_options = itemView.findViewById(R.id.imageViewReportOptions);
             constraintLayout = itemView.findViewById(R.id.main_layout);
-
         }
     }
 }

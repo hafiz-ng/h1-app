@@ -21,6 +21,7 @@ public class ReportDetail extends AppCompatActivity {
     ImageView imageView;
     Button readReport;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +33,7 @@ public class ReportDetail extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(ReportDetail.this, MainActivity.class);
                 startActivity(i);
+
             }
         });
 

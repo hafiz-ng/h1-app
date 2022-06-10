@@ -40,13 +40,34 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <WebView
-        android:id="@+id/web_view"
-        android:layout_margin="7dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/toolbar">
 
-    </WebView>
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/card"
+        android:ems="10"
+        android:fontFamily="@font/effra_regular"
+        android:inputType="number"
+        android:padding="10dp"
+        android:hint="Number of cookies"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/teal_200"
+        android:fontFamily="@font/effra_regular"
+        android:text="Buy"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+
 
 </RelativeLayout>
